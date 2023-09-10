@@ -1,25 +1,11 @@
+import { styled } from "styled-components";
 
-
-.container {
-  background-color: #f1f1f1;
-  min-height: 90vh;
-  padding: 0px 15vw;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
-
-.imagen-icono {
+export const Icono = styled.img`
   height: 25px;
   width: 25px;
-}
+`;
 
-.btn {
+export const Btn = styled.button`
   margin: 15px auto 0px auto;
   display: block;
   border-radius: 20px;
@@ -30,9 +16,9 @@
   font-size: 14px;
   padding: 8px 20px;
   cursor: pointer;
-}
+`;
 
-.box {
+export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,25 +27,18 @@
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
   width: 48%;
-}
-
-.saldo {
-  font-weight: 700;
-  font-size: 32px;
-}
-
-.detalle {
-  color: #41d3be;
-  font-size: 24px;
-}
-
-@media (max-width: 800px) {
-  .box {
+  @media (max-width: 800px) {
     width: 95%;
     margin: 5px;
   }
+`;
 
-  .content {
-    flex-direction: column;
-  }
-}
+export const Saldo = styled.div`
+  font-weight: 700;
+  font-size: 32px;
+`;
+
+export const Detalle = styled.span`
+  color: #41d3be;
+  font-size: 24px;
+`;
