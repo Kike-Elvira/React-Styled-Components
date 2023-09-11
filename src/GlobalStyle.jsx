@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle` // definiendo un estilo global
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: grey;
 }
 `;
 
